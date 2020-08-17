@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Install the required compilers and other tools') {
       steps {
-         sh label: '', script: 'sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev -S'
+         sh label: '', script: 'sudo apt-get install -S build-essential libncurses-dev bison flex libssl-dev libelf-dev'
       }
     }
     }
