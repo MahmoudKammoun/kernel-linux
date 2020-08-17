@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Install the required compilers and other tools') {
       steps {
-         sh label: '', script: 'make menuconfig'
+         sh label: '', script: 'make -j 4'
       }
     }
     }
