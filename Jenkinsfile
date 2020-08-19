@@ -13,7 +13,7 @@ pipeline {
     }
     stage('compile') {
       steps {
-         sh label: '', script: 'make -j 4'
+         sh label: '', script: 'make config'
       }
     }
     }
