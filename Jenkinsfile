@@ -11,6 +11,10 @@ pipeline {
          sh label: '', script: 'cp -v /boot/config-$(uname -r) .config'
       }
     }
-    
+    stage('Configuring') {
+      steps {
+         sh label: '', script: 'make config'
+      }
+    }
     }
     }
